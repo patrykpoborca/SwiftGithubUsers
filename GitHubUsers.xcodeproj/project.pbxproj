@@ -13,6 +13,8 @@
 		14C60E9F1BCF6331003450C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C60E9E1BCF6331003450C5 /* Images.xcassets */; };
 		14C60EA21BCF6331003450C5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14C60EA01BCF6331003450C5 /* LaunchScreen.xib */; };
 		14C60EAE1BCF6331003450C5 /* GitHubUsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C60EAD1BCF6331003450C5 /* GitHubUsersTests.swift */; };
+		14C60EBA1BCF6E4E003450C5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C60EB91BCF6E4E003450C5 /* BaseViewController.swift */; };
+		14C60EBC1BCF6F31003450C5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C60EBB1BCF6F31003450C5 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		14C60EA71BCF6331003450C5 /* GitHubUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C60EAC1BCF6331003450C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14C60EAD1BCF6331003450C5 /* GitHubUsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUsersTests.swift; sourceTree = "<group>"; };
+		14C60EB91BCF6E4E003450C5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		14C60EBB1BCF6F31003450C5 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 		14C60E941BCF6331003450C5 /* GitHubUsers */ = {
 			isa = PBXGroup;
 			children = (
+				14C60EB81BCF6DE1003450C5 /* base */,
+				14C60EB71BCF6DD8003450C5 /* ui */,
 				14C60E971BCF6331003450C5 /* AppDelegate.swift */,
 				14C60E991BCF6331003450C5 /* ViewController.swift */,
 				14C60E9B1BCF6331003450C5 /* Main.storyboard */,
@@ -110,6 +116,22 @@
 				14C60EAC1BCF6331003450C5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		14C60EB71BCF6DD8003450C5 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		14C60EB81BCF6DE1003450C5 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				14C60EB91BCF6E4E003450C5 /* BaseViewController.swift */,
+				14C60EBB1BCF6F31003450C5 /* BaseViewModel.swift */,
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C60E9A1BCF6331003450C5 /* ViewController.swift in Sources */,
+				14C60EBC1BCF6F31003450C5 /* BaseViewModel.swift in Sources */,
 				14C60E981BCF6331003450C5 /* AppDelegate.swift in Sources */,
+				14C60EBA1BCF6E4E003450C5 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
